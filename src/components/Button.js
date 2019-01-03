@@ -2,7 +2,11 @@ import React from 'react';
 
 const ButtonInline = ({ onClick, type = 'button', children }) => {
   return (
-    <Button type={type} className="button-inline" onClick={onClick}>
+    <Button
+      type={type}
+      className="button-inline"
+      onClick={onClick}
+    >
       {children}
     </Button>
   );
@@ -16,4 +20,5 @@ const Button = ({ onClick, className, type = 'button', children }) => {
   );
 };
 
-export { Button, ButtonInline };
+export default Button;
+export { ButtonInline };
